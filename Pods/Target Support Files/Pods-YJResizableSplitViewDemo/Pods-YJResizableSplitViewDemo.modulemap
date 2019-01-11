@@ -1,0 +1,6 @@
+framework module Pods_YJResizableSplitViewDemo {
+  umbrella header "Pods-YJResizableSplitViewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
