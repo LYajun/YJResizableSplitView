@@ -22,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = NO;
+    
     [self.view addSubview:self.topTextView];
     [self.topTextView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.left.top.equalTo(self.view);
@@ -71,7 +73,7 @@
         _splitView = [[YJResizableSplitView alloc] initWithFrame:CGRectZero];
         _splitView.delegate = self;
         _splitView.topDistance = 44;
-        _splitView.bottomDistance = 64;
+        _splitView.bottomDistance = 88 + 64;
     }
     return _splitView;
 }
